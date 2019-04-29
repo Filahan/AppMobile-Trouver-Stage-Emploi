@@ -1,0 +1,123 @@
+<ion-header>
+
+  <ion-navbar color="macouleur" *ngIf="id=='true'; else falseid">
+    <ion-title>mon profile</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+  <ng-template #falseid>
+    <ion-navbar color="macouleur">
+      <ion-title>{{ensaisteUser.firstName}} {{ensaisteUser.lastName}}</ion-title>
+    </ion-navbar>
+  </ng-template>
+</ion-header>
+
+
+<ion-content class="back" padding>
+  <ion-fab padding="" (click)="change()" *ngIf="id=='true' || id==ensaisteId">
+    <button ion-fab>
+      <ion-icon name="settings"></ion-icon>
+    </button>
+  </ion-fab>
+
+  <ion-card style="border-radius:10px; ">
+    <ion-item text-center=""><img src="{{ensaisteUser.photo}}" class="image">
+      <strong>{{ensaisteUser.firstName}} {{ensaisteUser.lastName}}</strong>
+      <p>{{ensaisteUser.formation}}</p>
+      <p>{{ensaisteUser.city}}</p>
+    </ion-item>
+
+    <ion-card>
+      <ion-item padding-left="">
+        <ion-title><strong>Formation</strong></ion-title>
+        <div padding-top="">
+          <ion-card padding="" text-center="" *ngFor="let f of myObject1">
+            <div text-center="">
+              <strong>Etablissement: </strong>{{f[1]["ecole"]}}<br>
+              <strong>Filiere: </strong>{{f[1]["filiere"]}}<br>
+              <strong>Date debut: </strong>{{f[1]["date_debut"]}}<br>
+              <strong>Date fin: </strong>{{f[1]["date_fin"]}}
+            </div>
+            <button><ion-icon (click)="supprimer(f[0])" name="trash"></ion-icon></button>
+          </ion-card>
+          <!-- <strong>{{ensaisteUser.zdebut}}-{{ensaisteUser.zfin}}:</strong>-->
+       <!--   <p>{{ensaisteUser.zecole}}</p>-->
+        </div>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item padding-left="">
+        <ion-title><strong>Contact</strong></ion-title>
+        <div padding-top="">
+          <strong>Email: </strong>{{ensaisteUser.email}}
+        </div>
+        <div>
+          <strong>Tel: </strong>{{ensaisteUser.phone}}
+        </div>
+      </ion-item>
+    </ion-card>
+  </ion-card>
+
+
+
+
+
+  <ion-title text-left="" padding-bottom="">
+    <strong>Experience :</strong></ion-title>
+
+  <ion-card padding="" text-center="" *ngFor="let f of myObject2">
+    <div text-center="">
+      <strong>Etablissement: </strong>{{f[1]["ecole"]}}<br>
+      <strong>Type: </strong>{{f[1]["type"]}}<br>
+      <strong>Mission: </strong>{{f[1]["mission"]}}<br>
+
+      <strong>Date debut: </strong>{{f[1]["date_debut"]}}<br>
+      <strong>Date fin: </strong>{{f[1]["date_fin"]}}
+    </div>
+    <button><ion-icon (click)="supprimerexp(f[0])" name="trash"></ion-icon></button>
+  </ion-card>
+
+  <p class="text" *ngIf="id=='true' || id==ensaisteId || entrepriseDisplayName=='entreprise'">
+    Recommandations:</p>
+
+  <div style="color: #f53d3d;margin-top: 17px;text-align:center" *ngIf="entrepriseDisplayName=='entreprise'&& myObject.length==0">
+    Soyez le premier à recommander ce candidat!!
+  </div>
+  <div style="color: #f53d3d;margin-top: 17px;text-align:center" *ngIf="(id=='true' || id==ensaisteId )&& myObject.length==0">
+    Pas de recommandation !!
+  </div>
+
+  <div class="scroll">
+    <ion-list *ngIf="id=='true' || id==ensaisteId || entrepriseDisplayName=='entreprise'">
+      <ion-item-sliding *ngFor="let recommandation of myObject">
+        <ion-item class="comment">
+          <ion-avatar item-start>
+            <img src="{{recommandation[2]['photo']}}" class="imgreduce">
+          </ion-avatar>
+          <div>
+            <h2>{{recommandation[2]['entrepriseName']}}</h2>
+            <p style="white-space: pre-line">{{recommandation[1]['recommandation_text']}}</p>
+          </div>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="secondary" (click)="consulterEntreprise(recommandation[1]['id_entreprise'])">
+            <ion-icon name="text"></ion-icon>
+            consulter
+          </button>
+          <button ion-button color="danger" *ngIf="id=='true' || id==ensaisteId " (click)="deleteRecommandation(recommandation[0])">
+            <ion-icon name="trash"></ion-icon>
+            delete
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+
+    </ion-list>
+  </div>
+
+  <button block *ngIf="entrepriseDisplayName=='entreprise'" ion-button item-left (click)="recommanderEnsaiste()">
+    Recommander
+  </button>
+</ion-content>

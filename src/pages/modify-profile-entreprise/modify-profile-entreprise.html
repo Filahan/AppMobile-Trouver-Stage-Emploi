@@ -1,0 +1,55 @@
+<ion-header >
+  <ion-navbar color="macouleur">
+    <ion-title>ModifyProfileEntreprisePage</ion-title>
+  </ion-navbar>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</ion-header>
+
+<ion-content padding padding-top="30px">
+  <input type="file" value="UploadPhoto" (change)="upload($event)" accept=".jpg,.png" />
+
+  <ion-item-sliding>
+    <ion-item class="comment">
+      <ion-avatar item-start>
+        <img src="{{entrepriseProfile.photo}}" id="myimg">
+      </ion-avatar>
+      <div>
+        <h2>change image</h2>
+      </div>
+    </ion-item>
+  </ion-item-sliding>
+
+  <form #f="ngForm" (ngSubmit)="modifier(f.value)" >
+    <ion-row>
+
+      <strong padding="" padding-vertical="6px;">Nom Entreprise:</strong>
+      <ion-col>
+        <input required="" type="text" name="nomentreprise" ngModel class="form-control" value="{{entrepriseProfile.entrepriseName}}">
+      </ion-col></ion-row>
+
+    <ion-row>
+      <strong padding="" padding-vertical="6px;">email:</strong>
+      <ion-col><input required="" type="text" name="email" ngModel class="form-control" value="{{entrepriseProfile.email}}">
+      </ion-col></ion-row>
+
+    <ion-row>
+      <strong padding="" padding-vertical="6px;">tel:</strong>
+      <ion-col><input required="" type="text" name="tel" ngModel class="form-control" value="{{entrepriseProfile.phone}}">
+      </ion-col></ion-row>
+    <ion-row>
+      <strong padding="" padding-vertical="6px;">ville:</strong>
+      <ion-col><input required="" type="text" name="ville" ngModel class="form-control" value="{{entrepriseProfile.city}}">
+      </ion-col></ion-row>
+
+    <ion-row>
+      <strong padding="" padding-vertical="6px;">description:</strong>
+      <ion-col><textarea required="" type="textarea" name="tel" ngModel class="form-control" value="{{entrepriseProfile.description}}">
+      </textarea></ion-col></ion-row>
+
+
+    <ion-item text-center="">
+      <button class="btn btn-primary btn-lg btn-block"  type="submit" >Modifier</button>
+    </ion-item>
+  </form>
+</ion-content>

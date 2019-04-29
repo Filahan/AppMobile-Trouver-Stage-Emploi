@@ -1,0 +1,116 @@
+<ion-header>
+  <ion-navbar color="macouleur">
+    <ion-title>Annonce Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding="" class="back">
+  <ion-card padding="">
+   <ion-item>
+    <ion-avatar item-start class="imgreduce">
+      <img src="{{entrepriseUser.photo}}">
+    </ion-avatar>
+    <strong>{{annonceStage.titre}}</strong>
+    <p>{{entrepriseUser.entrepriseName}}</p>
+    <p>publiee le {{afficherDateFormat(annonceStage.publiee_le)}}</p>
+    </ion-item>
+    <ion-item>
+
+      <div><strong style="color:darkred; display:inline-block">Type de stage :</strong> <p style="display: inline">{{annonceStage.type_stage}}</p></div>
+      <div><strong style="color:darkred; display:inline-block">Ville :</strong> <p style="display: inline">{{annonceStage.ville}}</p></div>
+
+      <div><strong style="color:darkred; display:inline-block">Stage :</strong>
+        <p *ngIf="annonceStage.remuneration==false; else trueRemu" style="display: inline">Stage Non Rémunéré</p>
+        <ng-template #trueRemu><p style="display: inline">Stage Rémunéré</p></ng-template>
+      </div>
+
+      <div><strong style="color:darkred; display:inline-block">Categorie :</strong>
+        <p style="display: inline">{{annonceStage.categorie}}</p></div>
+
+      <div><strong style="color:darkred; display:inline-block">Durée du stage :</strong> <p style="display: inline">{{annonceStage.duree_stage}} mois</p></div>
+
+      <div><strong style="color:darkred; display:inline-block">A partir de :</strong> <p style="display: inline">{{afficherDateFormat(annonceStage.a_partir_de)}}</p></div>
+    </ion-item>
+    <p class="text">Description Entreprise</p>
+    <ion-card padding="">
+      <ion-card-content>
+        {{entrepriseUser.description}}
+      </ion-card-content>
+    </ion-card>
+
+
+    <p class="text">CONTEXTE & MISSION</p>
+    <ion-card padding="">
+      <ion-card-content>
+        {{annonceStage.contexte_mission}}
+      </ion-card-content>
+    </ion-card>
+
+    <p class="text">PROFIL RECHERCHÉ</p>
+    <ion-card padding="">
+      <ion-card-content>
+        {{annonceStage.profil_recherche}}
+      </ion-card-content>
+    </ion-card>
+  </ion-card>
+
+  <p class="text">Commentaires:</p>
+  <div style="color: #f53d3d;margin-top: 35px;text-align:center " *ngIf="myObject.length==0">Soyez le premier à commenter cette annonce !!</div>
+  <div class="scroll">
+    <ion-list>
+      <ion-item-sliding *ngFor="let commentaire of myObject">
+        <ion-item class="comment">
+          <ion-avatar item-start>
+            <img src="{{commentaire[2]['photo']}}" class="imgreduce">
+          </ion-avatar>
+          <div>
+            <h2>{{commentaire[2]['firstName']}} {{commentaire[2]['lastName']}}</h2>
+            <p style="white-space: pre-line">{{commentaire[1]['commentaire_text']}}
+              <b>Disponible :</b>{{commentaire[1]['disponibilite']}}
+              <b>Ville:</b>{{commentaire[2]['city']}}</p>
+          </div>
+        </ion-item>
+        <ion-item-options side="right">
+          <button ion-button color="secondary" (click)="consulterEnsaiste(commentaire[1]['id_ensaiste'])" >
+            <ion-icon name="text"></ion-icon>
+            Consulter
+          </button>
+          <button ion-button color="danger" *ngIf="userDisplayName=='ensaiste' &&userUid==commentaire[1]['id_ensaiste']" (click)="deleteComment(commentaire[0])" >
+            <ion-icon name="trash"></ion-icon>
+            delete
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </div>
+  <button block ion-button *ngIf="userDisplayName=='ensaiste'" (click)="showPrompt()" item-left><ion-icon name="send"></ion-icon></button>
+<!--
+  <ul padding="0px" *ngFor="let commentaire of myObject"><ion-card padding="2px">
+    <ion-row>
+      <ion-col col-3="">
+        <span style=""><img class="imagecomm" src="{{commentaire[2]['photo']}}"></span>
+      </ion-col>
+      <ion-col>
+        <strong></strong>
+      </ion-col></ion-row>
+    id_commentaire :{{commentaire[1]['id_commentaire']}}<br>
+    id_ensaiste : {{commentaire[1]['id_ensaiste']}}<br>
+    commentaire_text : {{commentaire[1]['commentaire_text']}}<br>
+    disponibilite : {{commentaire[1]['disponibilite']}}<br>
+    &lt;!&ndash;commentaire[1] contient les infos sur commentaire && commentaire[2] contient des infos sur ensaiste&ndash;&gt;
+    city :{{commentaire[2]['city']}}<br>
+    competence :{{commentaire[2]['competence']}}<br>
+    date_naissance : {{commentaire[2]['date_naissance']}}<br>
+    email : {{commentaire[2]['email']}}<br>
+    evaluation :{{commentaire[2]['evaluation']}}<br>
+    experience :{{commentaire[2]['experience']}}<br>
+    firstName : {{commentaire[2]['firstName']}}<br>
+    formation : {{commentaire[2]['formation']}}<br>
+    phone :{{commentaire[2]['phone']}}<br>
+    lastName :{{commentaire[2]['lastName']}}<br>
+    photo : {{commentaire[2]['photo']}}<br>
+  </ion-card>
+  </ul>
+-->
+
+</ion-content>

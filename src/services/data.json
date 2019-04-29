@@ -1,0 +1,358 @@
+{
+  "annonceEmploi" : {
+    "-Mch_bZAvh7kiazx1966" : {
+      "a_partir_de" : "2019-02-18",
+      "categorie" : "info",
+      "contexte_mission" : "faire du travaille",
+      "id_entreprise" : "8ekgYzeqC2YDjCFqWR4AqTFxib62",
+      "langues_exigees" : "francais englais",
+      "nbr_poste_proposes" : "2",
+      "niveau_etude" : "Bac+5",
+      "niveau_experience" : "entre 1ans et 5ans",
+      "profil_recherche" : "php devloper",
+      "publiee_le" : "2019-03-30",
+      "titre" : "annoce demploii",
+      "type_contrat" : "CDI",
+      "ville" : "Casablanca"
+    },
+    "nowuqqy2iwi" : {
+      "a_partir_de" : "2019-05-22",
+      "categorie" : "Informatique/ Réseaux/ Télécoms",
+      "contexte_mission" : "missionokljhgchvjbnkjhgfvchjbnkhgcvb",
+      "id_entreprise" : "8ekgYzeqC2YDjCFqWR4AqTFxib62",
+      "langues_exigees" : "anglais",
+      "nbr_poste_proposes" : "5",
+      "niveau_etude" : "bac+3",
+      "niveau_experience" : "entre 1ans et 7ans",
+      "profil_recherche" : "anass",
+      "publiee_le" : "2019-07-02",
+      "titre" : "hello job",
+      "type_contrat" : "CDI",
+      "ville" : "Al-Hoceima"
+    }
+  },
+  "annonceStage" : {
+    "-Mch_bZAvh7kiazx6h99" : {
+      "a_partir_de" : "2022-02-18",
+      "categorie" : "Simma",
+      "contexte_mission" : "Nous recrutons un stagiaire .....",
+      "duree_stage" : "5",
+      "id_entreprise" : "-Muh_aSRah7kJewq8C29",
+      "profil_recherche" : "Connaissances en développement tawza.",
+      "publiee_le" : "2013-02-18",
+      "remuneration" : "true",
+      "stagiaire_demande" : "2",
+      "titre" : "offre zeeen",
+      "type_stage" : "operationnel",
+      "ville" : "Ouedzem",
+      "z_commentaires" : {
+        "-Mch_bZAvh7kiazxKK1" : {
+          "commentaire_text" : "HELLO COMMENTAIRE.",
+          "disponibilite" : "5/07/2019 pour 2 mois",
+          "id_commentaire" : "2",
+          "id_ensaiste" : "OZzqYbwlNAQspbbZZyDZxGKjTcr2"
+        },
+        "ADDDbZAvh7kiazx6h49" : {
+          "commentaire_text" : "ouedzem.",
+          "disponibilite" : "1/09/2019 pour 8 mois",
+          "id_commentaire" : "1",
+          "id_ensaiste" : "-Muh_aSRah7kJewq8C29"
+        }
+      }
+    },
+    "-Mch_bZAvh7kiazx6k89" : {
+      "a_partir_de" : "2019-08-18",
+      "categorie" : "Informatique/ Réseaux/ Télécoms",
+      "contexte_mission" : "Nous recrutons un stagiaire pré-embauche pour assurer la gestion de projets informatiques",
+      "duree_stage" : "2",
+      "id_entreprise" : "hknV2tReqma7dfxJXp4YnnnipvX2",
+      "profil_recherche" : "Connaissances en développement informatique IONIC .",
+      "publiee_le" : "2019-07-18",
+      "remuneration" : "true",
+      "stagiaire_demande" : "2",
+      "titre" : "offre de stage KECH",
+      "type_stage" : "Pré-embauche",
+      "ville" : "Marrakech",
+      "z_commentaires" : {
+        "-Mch_bZAvh7kiazZFD8" : {
+          "commentaire_text" : "interesser.",
+          "disponibilite" : "12/07/2019 pour 3 mois",
+          "id_commentaire" : "2",
+          "id_ensaiste" : "-Muh_bZAvh7kiazx6D13"
+        },
+        "ADDDbZAvh7kiazx4D87" : {
+          "commentaire_text" : "ouedzem.",
+          "disponibilite" : "1/09/2019 pour 8 mois",
+          "id_commentaire" : "1",
+          "id_ensaiste" : "-Muh_aSRah7kJewq8C29"
+        }
+      }
+    },
+    "-Muh_bZAvh7kiazx6k69" : {
+      "a_partir_de" : "2019-02-11",
+      "categorie" : "Informatique/ Réseaux/ Télécoms",
+      "contexte_mission" : "Nous recrutons un stagiaire pré-embauche pour assurer la gestion de projets informatiques",
+      "duree_stage" : "2",
+      "id_entreprise" : "8ekgYzeqC2YDjCFqWR4AqTFxib62",
+      "profil_recherche" : "Connaissances en développement informatique PHP .",
+      "publiee_le" : "2018-04-18",
+      "remuneration" : "true",
+      "stagiaire_demande" : "3",
+      "titre" : "offre de stage CASA",
+      "type_stage" : "Observation",
+      "ville" : "Casablanca"
+    },
+    "1g1higs635a" : {
+      "a_partir_de" : "2019-12-18",
+      "categorie" : "Informatique/ Réseaux/ Télécoms",
+      "contexte_mission" : "mission a faire",
+      "duree_stage" : "2",
+      "id_entreprise" : "8ekgYzeqC2YDjCFqWR4AqTFxib62",
+      "profil_recherche" : "php devlopper",
+      "publiee_le" : "2019-05-18",
+      "remuneration" : "true",
+      "stagiaire_demande" : "5",
+      "titre" : "annonce TOP",
+      "type_stage" : "Observation",
+      "ville" : "Agadir"
+    }
+  },
+  "ensaiste" : {
+    "-Muh_aSRah7kJewq8C29" : {
+      "city" : "OuedZem",
+      "competence" : "Web Developper",
+      "date_naissance" : "29/12/1997",
+      "email" : "aniss@gmail.com",
+      "experience" : "nun",
+      "firstName" : "Aniss",
+      "formation" : "Etudiant en GI2",
+      "lastName" : "Mbarki",
+      "phone" : "0610774610",
+      "photo" : "../../assets/imgs/ensaiste.jpg",
+      "zdebut" : "2014",
+      "zecole" : "Ensa",
+      "zfin" : "2022",
+      "zz_annonce_stage_enregistre" : {
+        "-Muh_aSRah7kJewq8Cef" : {
+          "id" : "-Mch_bZAvh7kiazx6h99"
+        },
+        "-Muh_aSRah7kJewq8Cgr" : {
+          "id" : "-Mch_bZAvh7kiazx6k89"
+        }
+      }
+    },
+    "-Muh_bXAvh3sdfjk7S65" : {
+      "city" : "Marrakech",
+      "competence" : "Web Developper",
+      "date_naissance" : "1997-02-18",
+      "email" : "zakaria@gmail.com",
+      "experience" : "nun",
+      "firstName" : "Zakaria",
+      "formation" : "Etudiant en GI2",
+      "lastName" : "Latarcha",
+      "phone" : "0610774650",
+      "photo" : "../../assets/imgs/ensaiste.jpg",
+      "zdebut" : "2014",
+      "zecole" : "Ensa",
+      "zfin" : "2022",
+      "zz_annonce_stage_enregistre" : {
+        "-Muh_aSRah7hbfngq12" : {
+          "id" : "-Mch_bZAvh7kiazx6k89"
+        },
+        "-Muh_aSRah7kJegtf11" : {
+          "id" : "-Mch_bZAvh7kiazx6h99"
+        }
+      }
+    },
+    "-Muh_bZAvh7kiazx6D13" : {
+      "city" : "Marrakech",
+      "competence" : "Web Developper",
+      "date_naissance" : "1996-05-21",
+      "email" : "anass-filah@gmail.com",
+      "experience" : "nun",
+      "firstName" : "Anas",
+      "formation" : "Etudiant en GI2",
+      "lastName" : "Filah",
+      "phone" : "0665595210",
+      "photo" : "../../assets/imgs/ensaiste.jpg",
+      "zdebut" : "2014",
+      "zecole" : "Ensa",
+      "zfin" : "2022"
+    },
+    "33KfeBal4sbhDe6SGn6PrVynRZG2" : {
+      "city" : "berkane",
+      "competence" : "java",
+      "date_naissance" : "1996-05-21",
+      "email" : "aniss-090@gmail.fr",
+      "experience" : "wlo",
+      "firstName" : "Mouhamed Amin",
+      "formation" : "ensa khouribgua",
+      "lastName" : "Mbarki",
+      "phone" : "0587621459",
+      "photo" : "https://firebasestorage.googleapis.com/v0/b/employemanagment-914b8.appspot.com/o/cxyap78559d?alt=media&token=4a7c18f9-b387-49e7-a2c0-3c6eb048ebad",
+      "zdebut" : "2014",
+      "zecole" : "Ensa",
+      "zfin" : "2022",
+      "zz_annonce_emploi_enregistre" : {
+        "-Mch_bZAvh7kiazx1966" : {
+          "id" : "-Mch_bZAvh7kiazx1966"
+        },
+        "nowuqqy2iwi" : {
+          "id" : "nowuqqy2iwi"
+        }
+      },
+      "zz_annonce_stage_enregistre" : {
+        "-Mch_bZAvh7kiazx6h99" : {
+          "id" : "-Mch_bZAvh7kiazx6h99"
+        },
+        "-Mch_bZAvh7kiazx6k89" : {
+          "id" : "-Mch_bZAvh7kiazx6k89"
+        },
+        "-Muh_bZAvh7kiazx6k69" : {
+          "id" : "-Muh_bZAvh7kiazx6k69"
+        },
+        "1g1higs635a" : {
+          "id" : "1g1higs635a"
+        }
+      },
+      "zz_entreprise_enregistree" : {
+        "-Muh_aSRah7kJewq8C29" : {
+          "id" : "-Muh_aSRah7kJewq8C29"
+        }
+      }
+    },
+    "OZzqYbwlNAQspbbZZyDZxGKjTcr2" : {
+      "city" : "MARRAKECH",
+      "competence" : "PHP",
+      "date_naissance" : "1996-07-21",
+      "email" : "anissjob@gmail.com",
+      "experience" : "walo",
+      "firstName" : "Hassane",
+      "formation" : "ensa",
+      "lastName" : "Mbarki",
+      "phone" : "0625155410",
+      "photo" : "../../assets/imgs/ensaiste.jpg",
+      "zdebut" : "2014",
+      "zecole" : "Ensa",
+      "zfin" : "2022"
+    }
+  },
+  "entreprise" : {
+    "-Muh_aSRah7kJewq8C29" : {
+      "city" : "Casa",
+      "description" : "nun",
+      "email" : "entreprise-info@gmail.com",
+      "entrepriseName" : "MIT mobile",
+      "phone" : "0510259786",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "Informatique"
+    },
+    "-Muh_bXAvh3sdfjk7S65" : {
+      "city" : "Casa",
+      "description" : "nun",
+      "email" : "entreprise3-info@gmail.com",
+      "entrepriseName" : "Tech share",
+      "phone" : "0510259855",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "Informatique"
+    },
+    "-Muh_bZAvh7kiazx6D13" : {
+      "city" : "Casa",
+      "description" : "nun",
+      "email" : "entreprise2-info@gmail.com",
+      "entrepriseName" : "web info Entreprise",
+      "phone" : "0510259788",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "Informatique"
+    },
+    "-gergMuh_aSRah7kJewq8C29" : {
+      "city" : "Casa",
+      "description" : "nun",
+      "email" : "entreprise-info@gmail.com",
+      "entrepriseName" : "MIT mobile",
+      "phone" : "0510259786",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "Informatique"
+    },
+    "-thyjMuh_aSRah7kJewq8C29" : {
+      "city" : "Casa",
+      "description" : "nun",
+      "email" : "entreprise-info@gmail.com",
+      "entrepriseName" : "MIT mobile",
+      "phone" : "0510259786",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "Informatique"
+    },
+    "-xxMuh_aSRah7kJewq8C29" : {
+      "city" : "Casa",
+      "description" : "nun",
+      "email" : "entreprise-info@gmail.com",
+      "entrepriseName" : "MIT mobile",
+      "phone" : "0510259786",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "Informatique"
+    },
+    "883H6ZMJdYdTnQZRkHMJHjACrHM2" : {
+      "city" : "",
+      "description" : "hfycb",
+      "email" : "entreprise@gmail.com",
+      "entrepriseName" : "Mit",
+      "phone" : "0588888888",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "info"
+    },
+    "8ekgYzeqC2YDjCFqWR4AqTFxib62" : {
+      "city" : "casa",
+      "description" : "entreprise info ",
+      "email" : "filahCompany@hotmail.com",
+      "entrepriseName" : "anassEntreprise",
+      "phone" : "05555558456",
+      "photo" : "https://firebasestorage.googleapis.com/v0/b/employemanagment-914b8.appspot.com/o/z1ccaniyyrs?alt=media&token=7a8e5c26-79f5-491d-9b5c-dc71cbbb38a4",
+      "secteurActivite" : "info",
+      "zz_candidats_enregistree" : {
+        "-Muh_bZAvh7kiazx6D13" : {
+          "id" : "-Muh_bZAvh7kiazx6D13"
+        }
+      },
+      "zz_mes_annonces_emploi" : {
+        "-Mch_bZAvh7kiazx1966" : {
+          "id" : "-Mch_bZAvh7kiazx1966"
+        },
+        "nowuqqy2iwi" : {
+          "id" : "nowuqqy2iwi"
+        }
+      },
+      "zz_mes_annonces_stage" : {
+        "-Muh_bZAvh7kiazx6k69" : {
+          "id" : "-Muh_bZAvh7kiazx6k69"
+        },
+        "1g1higs635a" : {
+          "id" : "1g1higs635a"
+        }
+      }
+    },
+    "WxXDUTBZKTYKOmtP90ivFYhp3z12" : {
+      "city" : "",
+      "description" : "afemlh",
+      "email" : "dvCompany@gmail.com",
+      "entrepriseName" : "dvCompany",
+      "phone" : "0544444444",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "infoCafe",
+      "zz_candidats_enregistree" : {
+        "-Muh_aSRah7kJewq8C29" : {
+          "id" : "-Muh_aSRah7kJewq8C29"
+        }
+      }
+    },
+    "hknV2tReqma7dfxJXp4YnnnipvX2" : {
+      "city" : "",
+      "description" : "no job",
+      "email" : "entrepris1@gmail.com",
+      "entrepriseName" : "anissCompany",
+      "phone" : "0529451615",
+      "photo" : "../../assets/imgs/entreprise.jpg",
+      "secteurActivite" : "info"
+    }
+  }
+}

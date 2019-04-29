@@ -1,0 +1,71 @@
+page-users {
+  .comment{
+    background-color:#f0f0f0;
+  }
+  .scroll{
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: relative;
+      z-index: 1;
+      display: block;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      will-change: scroll-position;
+      //contain: size style layout;
+    max-height: 308px;
+  }
+  .imgreduce{
+    border: 2px solid #161954;
+    border-radius: 50%;
+  }
+  .text {
+    font-family: fantasy;
+    font-size: large;
+  }
+
+
+  #searchEnsaiste{
+    display:none;
+    position: absolute;
+    top: 49px;
+    width: 100%;
+    //visibility: visible;
+    //display: inline-block;
+    //visibility: hidden;
+  }
+  #searchEntreprise{
+    display:none;
+    position: absolute;
+    top: 49px;
+    width: 100%;
+  }
+
+  #mySelect{
+    position: absolute;
+    top: 8px;
+    right: 20px;
+  }
+  #mySelect2{
+    background-color: #06358e;
+    color: #fff;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    appearance: none;
+  }
+
+  .x {
+    position: relative;
+    background: #06358e;
+    color: white;
+    top: -51px;
+    right: 0;
+    left: 432px;
+  }
+  .templat{
+    margin-top: 60px;
+  }
+}
